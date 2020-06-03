@@ -3,11 +3,8 @@
 Based on the specifications of the IoT-DDL, Atlas thing architecture enables the automatic integration of the devices into the ecosystem and allows the programmer to discover and combine available services to create applications for the smart space. The Atlas thing architecture is a set of lightweight operating layers that initially aim at turning a thing into a smart stand-alone and self-dependable unit, getting smarter, more social, and more interactive with time. Atlas Thing Architecture extends the original Atlas architecture to enable the thing to self-discover itself and announce its presence, services and capabilities to other participants in the smart space. Besides capturing new engagement and programming opportunities, such knowledge exchange increases a thing’s awareness of the surrounding ecosystem and enables discovering and building new social relationships. Along with the provisioning and management capabilities offered by the Atlas Thing Architecture to the space users and developers, the Atlas Thing Architecture supports both thing-to-thing and thing-to-cloud communication paradigms through the support of a set of communication protocols and enabling communication interoperability through protocol translators. The Atlas Thing Architecture also enables, through the IoT-DDL, the thing to dynamically define and generate its own services and formulates appropriate programmable interfaces through which the thing mates can interact and trigger the offered services.
 
 
-
-![AtlasThingArchitecture](https://user-images.githubusercontent.com/4036542/83678737-d204be80-a5a3-11ea-8a6e-4ad758b8fa88.jpg)
-
 <p align="center">
-  <img src="https://github.com/AtlasFramework/Atlas-Thing-Architecture/blob/master/Resources/AtlasThingArchitecture.jpg" width="250" height="250" title="The Architecture">
+  <img src="https://github.com/AtlasFramework/Atlas-Thing-Architecture/blob/master/Resources/AtlasThingArchitecture.jpg" width="750" height="750" title="The Architecture">
 </p>
 
 
