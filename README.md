@@ -13,4 +13,5 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 > - Khaled, Ahmed E., and Sumi Helal. "Interoperable communication framework for bridging RESTful and topic-based communication in IoT." Future Generation Computer Systems 92 (2019): 628-643. [Link: https://eprints.lancs.ac.uk/id/eprint/89459/1/1_s2.0_S0167739X17317387_main.pdf]
 
 ## Tweet-Specificaitons 
-[Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.](https://github.com/AtlasFramework/Atlas-Thing-Architecture/blob/master/Resources/Tweets_Specifications.html)
+[Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.]
+(https://atlasframework.github.io/Atlas-Thing-Architecture/blob/master/Resources/Tweets_Specifications.html)
