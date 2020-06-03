@@ -4,7 +4,7 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 
 
 <p align="center">
-  <img src="https://github.com/AtlasFramework/Atlas-Thing-Architecture/blob/master/Resources/AtlasThingArchitecture.jpg" width="600" height="450" title="The Architecture">
+  <img src="https://github.com/AtlasFramework/Atlas-Thing-Architecture/blob/master/Resources/AtlasThingArchitecture.jpg" width="600" height="550" title="The Architecture">
 </p>
 
 
