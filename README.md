@@ -4,7 +4,7 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 
 
 
-![AtlasThingArchitecture](https://user-images.githubusercontent.com/4036542/83678737-d204be80-a5a3-11ea-8a6e-4ad758b8fa88.jpg =50x50)
+![AtlasThingArchitecture](https://user-images.githubusercontent.com/4036542/83678737-d204be80-a5a3-11ea-8a6e-4ad758b8fa88.jpg){:height="50%" width="50%"}
 
 
 
