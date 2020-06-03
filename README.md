@@ -4,7 +4,7 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 
 
 
-[AtlasThingArchiecture.pdf](https://github.com/AtlasFramework/Atlas-Thing-Architecture/files/4725653/AtlasThingArchiecture.pdf)
+![AtlasThingArchitecture](https://user-images.githubusercontent.com/4036542/83678737-d204be80-a5a3-11ea-8a6e-4ad758b8fa88.jpg)
 
 
 
