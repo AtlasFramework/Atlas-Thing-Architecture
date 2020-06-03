@@ -14,3 +14,7 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 
 ## Tweet-Specificaitons 
 [Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.](https://atlasframework.github.io/Atlas-Thing-Architecture/Tools/TweetSpecs.html)
+
+
+### Check the other parts of the project:
+[IoT-DDL.](https://github.com/AtlasFramework/IoT-DDL)
