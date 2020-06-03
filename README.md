@@ -9,7 +9,7 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 
 
 ## Read more about it in the following papers:
-> - Khaled, Ahmed E., Abdelsalam Helal, Wyatt Lindquist, and Choonhwa Lee. "IoT-DDL–device description language for the “T” in IoT." IEEE Access 6 (2018): 24048-24063. [Link: https://ieeexplore.ieee.org/abstract/document/8334820]
+> - Khaled, Ahmed E., Abdelsalam Helal, Wyatt Lindquist, and Choonhwa Lee. ["IoT-DDL–device description language for the “T” in IoT."]  (https://ieeexplore.ieee.org/abstract/document/8334820) IEEE Access 6 (2018): 24048-24063.
 > - Khaled, Ahmed E., and Sumi Helal. "Interoperable communication framework for bridging RESTful and topic-based communication in IoT." Future Generation Computer Systems 92 (2019): 628-643. [Link: https://eprints.lancs.ac.uk/id/eprint/89459/1/1_s2.0_S0167739X17317387_main.pdf]
 
 ## Tweet-Specificaitons 
