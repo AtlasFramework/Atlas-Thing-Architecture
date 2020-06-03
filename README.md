@@ -6,6 +6,10 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 
 ![AtlasThingArchitecture](https://user-images.githubusercontent.com/4036542/83678737-d204be80-a5a3-11ea-8a6e-4ad758b8fa88.jpg)
 
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
 
 
 ## Read more about it in the following papers:
