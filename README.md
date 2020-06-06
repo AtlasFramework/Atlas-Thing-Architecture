@@ -25,7 +25,7 @@ The architecture takes advantage of lightweight device management standards OMA-
 [Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.](https://atlasframework.github.io/Atlas-Thing-Architecture/Tools/TweetSpecs.html)
 
 
-## Check the other parts of the project:
+## Check the other parts of the Framework:
 > - [IoT-DDL.](https://github.com/AtlasFramework/IoT-DDL)
 > - Inter-Thing Relationship Framework
 > - Runtime Interactive Development Environment
