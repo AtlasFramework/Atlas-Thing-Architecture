@@ -25,6 +25,11 @@ The architecture takes advantage of lightweight device management standards OMA-
 [Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.](https://atlasframework.github.io/Atlas-Thing-Architecture/Tools/TweetSpecs.html)
 
 
+## Capture and visualize Atlas thing tweets-Specificaitons 
+[Use this tool to capture and visualize the different tweets announced and exchanged between Atlas things in your smart space.]
+(https://atlasframework.github.io/Atlas-Thing-Architecture/blob/master/Viewer/SpaceViewer.html)
+
+
 ## Check the other parts of the Framework:
 > - [IoT-DDL.](https://github.com/AtlasFramework/IoT-DDL)
 > - Inter-Thing Relationship Framework
