@@ -15,3 +15,8 @@ Based on the specifications of the IoT-DDL, Atlas thing architecture enables the
 ## Tweet-Specificaitons 
 [Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.]
 (https://atlasframework.github.io/Atlas-Thing-Architecture/blob/master/Resources/Tweets_Specifications.html)
+
+
+## Capture and visualize Atlas thing tweets-Specificaitons 
+[Use this tool to capture and visualize the different tweets announced and exchanged between Atlas things in your smart space.]
+(https://atlasframework.github.io/Atlas-Thing-Architecture/blob/master/Viewer/SpaceViewer.html)
