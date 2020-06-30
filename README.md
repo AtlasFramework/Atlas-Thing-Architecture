@@ -26,8 +26,7 @@ The architecture takes advantage of lightweight device management standards OMA-
 
 
 ## Capture and visualize Atlas thing tweets-Specificaitons 
-[Use this tool to capture and visualize the different tweets announced and exchanged between Atlas things in your smart space.]
-(https://atlasframework.github.io/Atlas-Thing-Architecture/blob/master/Viewer/SpaceViewer.html)
+[Use this tool to capture and visualize the different tweets announced and exchanged between Atlas things in your smart space.](https://atlasframework.github.io/Atlas-Thing-Architecture/Viewer/SpaceViewer.html)
 
 
 ## Check the other parts of the Framework:
