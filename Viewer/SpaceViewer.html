@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Atlas Thing Dashboard</title>
+	  <style>
+		    div.sx {
+				text-align: center;
+			}
+		    
+			div.log {
+				border-left: 3px solid blue;
+				width: 1215px;
+				height: 80px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				text-align: left;
+				padding: 20px;
+			}
+		  
+			div.container {
+				height: 100%;
+				width: 100%;
+				display: flex;
+			}
+			
+			div.leftThing {
+				width: 32%;
+				height: 200px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				text-align: left;
+				padding: 20px;
+				background-color: #fcf2fc;
+			}
+			
+			div.content {
+				width: 32%;
+				height: 200px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				text-align: left;
+				padding: 20px;
+				background-color: #f0f8ff;
+			}
+			
+			div.rightThing {
+				width: 32%;
+				height: 200px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				text-align: left;
+				padding: 20px;
+				background-color: #fcfcde;
+			}
+	  </style>
+	  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+      <script>	  
+			var numThing = 1;
+			var availableThings = [];
+			
+			function startConnect() {
+				clientID = "clientID-" + parseInt(Math.random() * 100);      // Generate a random client ID
+				
+				host = "broker.mqttdashboard.com"; 
+				port = "8000";
+
+				// Print output for the user in the messages div
+				document.getElementById("messages").innerHTML += '<span>Connecting to MQTT broker: ' + host + ' on port: ' + port + '</span><br/>';
+				document.getElementById("messages").innerHTML += '<span>This tool is connected as ' + clientID + '</span><br/>';
+
+				// Initialize new Paho client connection
+				client = new Paho.MQTT.Client(host, Number(port), clientID);
+
+				// Set callback handlers
+				client.onConnectionLost = onConnectionLost;
+				client.onMessageArrived = onMessageArrived;
+
+				// Connect the client, if successful, call onConnect function
+				client.connect({ 
+					onSuccess: onConnect,
+				});
+			}
+			
+			function onConnect() {							// Called when the client connects
+				topic = "AtlasThing/#";
+				document.getElementById("messages").innerHTML += '<span>Listening to tweets on: ' + topic + '</span><br/>';
+				client.subscribe(topic);				// Subscribe to the requested topic
+			}
+
+			function onConnectionLost(responseObject) {     // Called when the client loses its connection
+				document.getElementById("messages").innerHTML += '<span>ERROR: Connection lost</span><br/>';
+				if (responseObject.errorCode !== 0) {
+					document.getElementById("messages").innerHTML += '<span>ERROR: ' + + responseObject.errorMessage + '</span><br/>';
+				}
+			}
+
+			function onMessageArrived(message) {			// Called when a message arrives
+				console.log("onMessageArrived: " + message.payloadString);
+				document.getElementById("messages").innerHTML += '<span>Topic: ' + message.destinationName + '  | ' + message.payloadString + '</span><br/>';
+				var tweet = JSON.parse(message.payloadString);  				
+				var n = availableThings.includes(tweet.name);
+								
+				if(!n){
+
+					//create new section for that thing
+					availableThings.push(tweet.name);
+					var ni = document.getElementById("Things");
+					var newdiv = document.createElement('div');
+					
+					var divIdName = 'Thing_'+numThing+'!';
+					newdiv.setAttribute('id',divIdName);
+					ni.appendChild(newdiv);
+
+					var mainheader = document.createElement("H3");
+					var mainheaderIdName = "Atlas Thing "+numThing; 
+					mainheader.appendChild(document.createTextNode(mainheaderIdName));  
+					ni.appendChild(mainheader);
+
+					var tATID = document.createElement("Label");
+					tATID.innerHTML = "         ATID : "+ tweet.name;
+					ni.appendChild(tATID);
+					ni.appendChild(document.createElement('br'));
+					var tSDes = document.createElement("Label");
+					tSDes.innerHTML = "         ShortDes : "+ tweet.SDes;
+					ni.appendChild(tSDes);
+					ni.appendChild(document.createElement('br'));
+					numThing = numThing + 1;
+				}
+			}
+
+			function startDisconnect() {      			// Called when the disconnection button is pressed
+				client.disconnect();
+				document.getElementById("messages").innerHTML += '<span>Disconnected</span><br/>';
+			}	
+	  </script>
+   </head>
+   
+   <body>
+      <div class="wrapper">
+        <h2 style="text-align: center;">Visualize Atlas Things in your Smart Space</h2>
+        <h3 style="text-align: center;"><i>This tool captures and visualizes tweets from your Atlas Things</i></h3>
+        
+		<div id="connection" class="sx">
+			<b>Insert your Smart Space ID:</b>	
+			<input id="SpaceID" type="text" name="-" value="SSID12434">
+			<i>*Your things hold this ID in the IoT-DDL</i><br><br>
+			
+			<input type="button" onclick="startConnect()" value="Start Monitoring">
+            <input type="button" onclick="startDisconnect()" value="Stop!"><br>
+		</div>
+	    <br>
+	 	 
+		<div class="container">
+		  <div id="Things" class="leftThing">
+			<b>Tweets about Things and Entities:</b><br>
+		  </div>
+
+		  <div class="content">
+			<b>Tweets about Services and Resources:</b><br>
+		  </div>
+
+		  <div class="rightThing">
+			<b>Tweets about Relationships and Social links:</b><br>
+		  </div>
+		</div>
+		 
+		 <div id="messages" class="log">
+			<b>Log:</b><br>
+         </div>		 
+		 
+		 <footer style="text-align: center;">
+		 Develop an <a href="https://atlasframework.github.io/IoT-DDL/DDL_Builder/builder.html">IoT-DDL</a> for your Atlas thing <br>
+		 Read more about the <a href="https://github.com/AtlasFramework/Main">Atlas thing Framework</a>
+		 </footer>
+      </div>
+   </body>
+</html>
