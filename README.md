@@ -16,21 +16,22 @@ The architecture takes advantage of lightweight device management standards OMA-
   <img src="https://github.com/AtlasFramework/Atlas-Thing-Architecture/blob/master/Resources/AtlasThingArchitecture.jpg" width="700" height="550" title="The Architecture">
 </p>
 
-## Read more about it in the following papers:
-> - Khaled, Ahmed E., Abdelsalam Helal, Wyatt Lindquist, and Choonhwa Lee. ["IoT-DDL–device description language for the “T” in IoT."]  IEEE Access 6 (2018): 24048-24063.[Link: https://ieeexplore.ieee.org/abstract/document/8334820]
-> - Khaled, Ahmed E., and Sumi Helal. "Interoperable communication framework for bridging RESTful and topic-based communication in IoT." Future Generation Computer Systems 92 (2019): 628-643. [Link: https://eprints.lancs.ac.uk/id/eprint/89459/1/1_s2.0_S0167739X17317387_main.pdf]
-
 
 ## Current Version of Atlas middleware 
-[Atlas Thing Middleware for RaspberryPi IoT platforms](https://github.com/AtlasFramework/AtlasThingMiddleware_RPI)
+[Atlas-thing Middleware for RaspberryPi IoT platforms](https://github.com/AtlasFramework/AtlasThingMiddleware_RPI)
 
 
 ## Tweet-Specificaitons 
-[Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.](https://atlasframework.github.io/Atlas-Thing-Architecture/Tools/TweetSpecs.html)
-
+[View the structure of the different tweets an Atlas thing can excahnge and communicate with other mates.](https://atlasframework.github.io/Atlas-Thing-Architecture/Tools/TweetSpecs.html)
 
 ## Capture and visualize Atlas thing tweets 
 [Use this tool to capture and visualize the different tweets announced and exchanged between Atlas things in your smart space.](https://atlasframework.github.io/Atlas-Thing-Architecture/Viewer/SpaceViewer.html)
+
+
+## Read more about Atlas-thing Architecture through the following papers:
+> - Khaled, Ahmed E., Abdelsalam Helal, Wyatt Lindquist, and Choonhwa Lee. ["IoT-DDL–device description language for the “T” in IoT."]  IEEE Access 6 (2018): 24048-24063.[Link: https://ieeexplore.ieee.org/abstract/document/8334820]
+> - Khaled, Ahmed E., and Sumi Helal. "Interoperable communication framework for bridging RESTful and topic-based communication in IoT." Future Generation Computer Systems 92 (2019): 628-643. [Link: https://eprints.lancs.ac.uk/id/eprint/89459/1/1_s2.0_S0167739X17317387_main.pdf]
+
 
 
 ## Check the other parts of the Framework:
