@@ -21,6 +21,10 @@ The architecture takes advantage of lightweight device management standards OMA-
 > - Khaled, Ahmed E., and Sumi Helal. "Interoperable communication framework for bridging RESTful and topic-based communication in IoT." Future Generation Computer Systems 92 (2019): 628-643. [Link: https://eprints.lancs.ac.uk/id/eprint/89459/1/1_s2.0_S0167739X17317387_main.pdf]
 
 
+## Current Version of Atlas middleware 
+[Atlas Thing Middleware for RaspberryPi IoT platforms](https://github.com/AtlasFramework/AtlasThingMiddleware_RPI)
+
+
 ## Tweet-Specificaitons 
 [Check the "Tweet-Specifications" to view the components of the different messages Atlas thing can excahnge and communicate.](https://atlasframework.github.io/Atlas-Thing-Architecture/Tools/TweetSpecs.html)
 
